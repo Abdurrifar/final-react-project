@@ -1,11 +1,17 @@
+import { Outlet } from "react-router";
+import Navbar from "../../components/header/navbar";
+import Footer from "../../components/footer/footer";
 
 
-// const Root = () => {
-//     return (
-//         <div>
+const Root = () => {
+    return (
+        <div>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
 
-//         </div>
-//     );
-// };
+        </div>
+    );
+};
 
-// export default Root;
+export default Root;
