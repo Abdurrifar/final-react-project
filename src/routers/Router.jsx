@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router";
 import Root from "../pages/root/Root";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 import Home from "../pages/home/Home";
+import About from "../pages/About/About";
+import Bookdetails from "../pages/Bookdetails/Bookdetails";
+
 const Router = createBrowserRouter([
     {
         path: "/",
@@ -10,9 +13,25 @@ const Router = createBrowserRouter([
 
         children: [{
             index: true,
+            loader: () => fetch('booksData.json'),
             path: "/",
-            element: <Home></Home>
-        }]
+            Component: Home
+        },
+
+        {
+            path: "/about",
+            Component: About
+        },
+        {
+            path: "/bookDetails/:id",
+            Component: Bookdetails
+        }
+
+
+
+
+        ]
+
 
 
     },
