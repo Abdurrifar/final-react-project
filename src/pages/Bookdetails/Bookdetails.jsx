@@ -12,9 +12,6 @@ const Bookdetails = () => {
 
 
 
-    // upor ar toku hocca click a dakhar kaj ar nicer gula and addToDB component hocca button ar kaj
-
-
     const handleMarkAsRead = (id) => {
 
         addTOStroedDB(id)

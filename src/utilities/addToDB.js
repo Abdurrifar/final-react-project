@@ -24,4 +24,4 @@ const addTOStroedDB = (id) => {
     }
 
 }
-export { addTOStroedDB }
+export { addTOStroedDB, getStoreBook }

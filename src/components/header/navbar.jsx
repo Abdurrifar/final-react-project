@@ -5,6 +5,7 @@ const Navbar = () => {
     const links = <>
         <li><Link to="/">home</Link></li>
         <li><Link to="/about">about</Link></li>
+        <li><Link to="/readList">readList</Link></li>
     </>
     return (
         <div className="navbar   shadow-sm">
